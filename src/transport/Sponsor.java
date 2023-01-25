@@ -20,4 +20,12 @@ public class Sponsor {
     public  void sponsorRace(){
         offSum = 0;
     }
+
+    @Override
+    public String toString() {
+        return "Sponsor{" +
+                "name='" + name + '\'' +
+                ", offSum=" + offSum +
+                '}';
+    }
 }

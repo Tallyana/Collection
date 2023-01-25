@@ -78,4 +78,9 @@ public class Bus<D> extends Transport implements Competing {
     public void drive() {
         System.out.println("УЕХАЛИ!!");
     }
+
+    @Override
+    public String toString() {
+        return "Автобус с водителем"  + driver + "\n" + super.toString();
+    }
 }
