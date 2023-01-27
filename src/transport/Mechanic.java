@@ -27,10 +27,8 @@ public class Mechanic<T extends  Transport> {
     public String getCompany() {
         return company;
     }
-
-    @Override
-    public String toString() {
-        return "Механик" + name + '\'' + ", surName='" + surName + '\'' +
-                ", company='" + company + '\'' ;
+    public String toString(){
+        return "Механик"+ name + " " + surName + " из \n" + company + "\"";
     }
+
 }

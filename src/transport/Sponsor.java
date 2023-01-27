@@ -23,9 +23,6 @@ public class Sponsor {
 
     @Override
     public String toString() {
-        return "Sponsor{" +
-                "name='" + name + '\'' +
-                ", offSum=" + offSum +
-                '}';
+        return "Sponsor{" + "name='" + name + '\'' + ", offSum=" + offSum + '}';
     }
 }
