@@ -16,4 +16,7 @@ public abstract class Driver<T extends Transport> {
     public String toString() {
         return  name ;
     }
+
+    public void add(Driver driver) {
+    }
 }
