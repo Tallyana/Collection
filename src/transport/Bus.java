@@ -36,10 +36,6 @@ public class Bus extends Transport implements Competing {
    // public static final String[] getBusMaxSpeed = {"Максимальная скорость у №16", "Максимальная скорость у №17", "Максимальная скорость у №18"};
 
 
-    public boolean isDiagnosticsPassed() {
-        System.out.println("автобусы не могут проходить диагностику");
-        return false;
-    }
 
     public void startUp() {
         System.out.println(getBrand() + " Начать движение.");

@@ -39,11 +39,6 @@ public class Truck extends Transport implements Competing {
     //public static void getTruckBestLapTime() {System.out.println(getTruckBestLapTime[1]);}
 
 
-    @Override
-    public boolean isDiagnosticsPassed() {
-        return super.isDiagnosticsPassed();
-    }
-
 
     public Truck(double engineVolume) {
         super(engineVolume);

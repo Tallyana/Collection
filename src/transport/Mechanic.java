@@ -5,6 +5,9 @@ public class Mechanic<T extends  Transport> {
     private final String surName;
     private final String company;
 
+
+
+
     public Mechanic(String name, String surName, String company) {
         this.name = name;
         this.surName = surName;

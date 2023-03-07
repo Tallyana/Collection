@@ -10,7 +10,6 @@ public  abstract class Transport {
 
     private List<Sponsor> sponsors;
     private List<Mechanic<?>> mechanics;
-    private boolean diagnosticsPassed;
 
 
     public Transport(
@@ -37,16 +36,15 @@ public  abstract class Transport {
         return brand;
     }
 
-    public static String getModel () {
-        return getModel();
+    public String getModel() {
+        return model;
     }
+
     public static double getEngineVolume()
     {return engineVolume;}
 
 
-    public boolean isDiagnosticsPassed() {
-        return diagnosticsPassed;
-    }
+
 
     public void  addSponsor(Sponsor sponsor){
         sponsors.add(sponsor);

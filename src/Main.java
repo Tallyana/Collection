@@ -7,6 +7,8 @@ import transport.Truck;
 import transport.Bus;
 import transport.driver.DriverC;
 import transport.driver.DriverD;
+import java.util.Map;
+import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
 
@@ -43,6 +45,15 @@ public class Main {
         car.startUp();
         car.stopEnd();
         bus.drive ();
+
+        Map<String,String> spisok = new HashMap<String,String>();
+        spisok.put("Toyota ","Механик Петр Петров");
+        spisok.put("Kamaz ","Механик Иван Иванов");
+        spisok.put("Ikarus ","Механик Сергей Сергеев");
+        for (Map.Entry<String,String> item : spisok.entrySet()){
+            System.out.println("Ключ: " + item.getKey() + "Значение: "  + item.getValue());
+        }
+
     }
 
 }
