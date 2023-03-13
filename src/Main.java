@@ -1,14 +1,10 @@
-import transport.Car;
-import  transport.Mechanic;
+import transport.*;
 import  transport.driver.DriverB;
-import transport.Transport;
-import transport.Sponsor;
-import transport.Truck;
-import transport.Bus;
 import transport.driver.DriverC;
 import transport.driver.DriverD;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
+import transport.Car;
+import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
@@ -46,14 +42,14 @@ public class Main {
         car.stopEnd();
         bus.drive ();
 
-        Map<String,String> spisok = new HashMap<String,String>();
+      /* Map<String,String> spisok = new HashMap<String,String>();
         spisok.put("Toyota ","Механик Петр Петров");
         spisok.put("Kamaz ","Механик Иван Иванов");
         spisok.put("Ikarus ","Механик Сергей Сергеев");
         for (Map.Entry<String,String> item : spisok.entrySet()){
             System.out.println("Ключ: " + item.getKey() + "Значение: "  + item.getValue());
-        }
-
+        }*/
+        Map<Car, ArrayList<Mechanic<Car>>>spisok = new  HashMap();
     }
 
 }
