@@ -1,6 +1,8 @@
 package transport;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
 
 public  abstract class Transport {
 
@@ -17,11 +19,11 @@ public  abstract class Transport {
             String model,
             double engineVolume) {
 
-        if (brand != null || !brand.isBlank()) {
+       /* if (brand != null || !brand.isBlank()) {
             this.brand = "default";
         } else {
             this.brand = brand;
-        }
+        }*/
         if (model == null || !model.isBlank()) {
             this.model = "default";
         } else {
@@ -113,7 +115,13 @@ public  abstract class Transport {
         }
         return result.toString();
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand,model,engineVolume,sponsors,mechanics);
     }
+}
+
 
 
 

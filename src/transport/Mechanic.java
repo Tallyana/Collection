@@ -1,5 +1,10 @@
 package transport;
 
+import transport.driver.Driver;
+
+import java.util.HashSet;
+import java.util.Set;
+
 public class Mechanic<T extends  Transport> {
     private final String name;
     private final String surName;

@@ -25,7 +25,7 @@ public class Car extends Transport implements Competing {
 
 
     public List<Mechanic<Car>> getMechanics () {
-        return getMechanics();
+        return (List<Mechanic<Car>>) mechanics();
     }
 
 
